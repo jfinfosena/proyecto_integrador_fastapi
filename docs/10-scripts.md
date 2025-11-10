@@ -10,6 +10,13 @@ Este documento describe los scripts disponibles en `scripts/` y cómo utilizarlo
     - `python scripts/seed_users.py`
     - `python scripts/seed_users.py --reset` reinicia tablas antes de sembrar.
 
+- `scripts/seed_data.py`
+  - Semilla un dataset completo: usuarios, perfiles, categorías e ítems asociados.
+  - Uso:
+    - `python scripts/seed_data.py` siembra datos sin reiniciar el esquema.
+    - `python scripts/seed_data.py --reset` elimina y recrea tablas antes de sembrar.
+    - `python scripts/seed_data.py --empty` elimina y recrea tablas sin sembrar (útil para pruebas limpias).
+
 - `scripts/test_api.ps1`
   - Script PowerShell para probar la API end-to-end con autenticación, roles y CRUD.
   - Cobertura:

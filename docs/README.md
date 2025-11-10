@@ -11,9 +11,10 @@ Bienvenido. Esta documentación te guía paso a paso para entender y trabajar co
 - 06 - Modelos (SQLAlchemy) y Schemas (Pydantic v2): `06-modelos-y-schemas.md`
 - 07 - Rutas y Routers (FastAPI): `07-rutas.md`
 - 08 - Servicios y lógica de negocio: `08-servicios.md`
-  - Incluye servicio `profile_service` para relación 1:1 con `User`.
-- 10 - Documentación con Scalar: `10-documentacion-scalar.md`
-- 11 - Solución de problemas (FAQ): `11-troubleshooting.md`
+- 09 - Documentación con Scalar: `09-documentacion-scalar.md`
+- 10 - Scripts de utilidad y pruebas: `10-scripts.md`
+- 11 - Relaciones entre modelos y API: `11-relaciones-api.md`
+- 12 - Deploy en Render (Docker): `12-deploy-render.md`
 
 Consejo: Lee en orden, pero si ya puedes ejecutar el servidor, alterna lectura con práctica (probando endpoints).
 
