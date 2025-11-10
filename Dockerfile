@@ -11,15 +11,18 @@ WORKDIR /app
 # Dependencias del sistema (compilación mínima); se puede ajustar según requirements
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
+    gcc \
+    libpq-dev \
+    python3-dev \
  && rm -rf /var/lib/apt/lists/*
 
 # Instalar dependencias de Python
 COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
 # Copiar el código de la app
 COPY app ./app
-COPY docs ./docs
+# COPY docs ./docs
 
 # Exponer el puerto de la app
 EXPOSE 8000
