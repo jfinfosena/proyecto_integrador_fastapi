@@ -12,7 +12,7 @@ if str(ROOT_DIR) not in sys.path:
 from app.core.database import SessionLocal, Base, engine
 from app.models.user import User
 from app.models.item import Item
-from app.models.profile import Profile
+from app.models.usuario import Profile
 
 
 USERS = [
